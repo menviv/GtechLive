@@ -6,3 +6,476 @@ body {
 a {
   color: #00B7FF;
 }
+
+input {
+    border-radius: 2px;
+    width: 60%;
+    margin-right: 20%;
+    margin-bottom: 5px;
+    height: 20px;
+    border: 1px solid orange;
+    padding-left: 5px;
+}
+
+input#inputID {
+    border-radius: 2px;
+    width: 70%;
+    margin-bottom: 10px;
+    height: 20px;
+    border: 1px solid orange;
+    padding-left: 5px;
+    opacity:0;
+}
+
+input#inputCustomID {
+    border-radius: 2px;
+    width: 70%;
+    margin-bottom: 10px;
+    height: 20px;
+    border: 1px solid orange;
+    padding-left: 5px;
+    opacity:0;
+}
+
+fieldset {
+    width: 100%;
+    border: 0px;
+}
+
+div#manage {
+    float: left;
+    width: 50%;
+    max-height: 90%;
+    overflow: scroll;
+    padding: 0%;
+    padding-top: 0;
+    margin-top: 1%;
+    border: 1px solid #00d0ff;
+    background-color: rgba(0, 208, 255, 0.37);
+    border-radius: 5px;
+    margin-left: 22%;
+    display: none;
+}
+
+button {
+    border: 1px solid #00b7ff;
+    background: #00b7ff;
+    color: #fff;
+    width: 150px;
+    font-size: 15px;
+    font-weight: 400;
+    margin: auto;
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+h1 {
+    direction: rtl;
+    text-align: center;
+}
+
+p {
+    direction: rtl;
+    float: left;
+    text-align: center;
+    width: 100%;
+    -webkit-margin-after: 0em;
+    -webkit-margin-before: 0em;
+}
+
+div#status {
+    position: fixed;
+    bottom: 10px;
+    color: green;
+}
+
+div#login {
+    position: fixed;
+    width: 20%;
+    height: 200px;
+    left: 40%;
+    top: 20%;
+    background-color: #00d0ff;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+input#userID {
+    width: 80%;
+    margin-left: 10%;
+}
+
+input#password {
+    width: 80%;
+    margin-left: 10%;
+}
+
+div#loginmsg {
+    position: absolute;
+    bottom: 5px;
+    color: #fff;
+    display: none;
+}
+
+div#Shading {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.83);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+
+div#ReoccuringBuilder {
+    position: fixed;
+    top: 10%;
+    left: 30%;
+    width: 40%;
+    height: 250px;
+    z-index: 1100;
+    background: #f3a914;
+    border-radius: 5px;
+    display: none;
+}
+
+div#Menu {
+    position: fixed;
+    left: 3%;
+    top: 10%;
+    background: #a9a8a8;
+    padding: 1%;
+    width: 14%;
+    display: none;
+}
+
+div#openReoccuringBuilder {
+    float: left;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.83);
+    width: 100%;
+    font-size: 18px;
+    border-bottom: 1px solid #fff;
+}
+
+div#openReoccuringBuilder:hover {
+    float: left;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: orange;
+    width: 100%;
+    font-size: 18px;
+    border-bottom: 1px solid orange;
+}
+
+div#openReoccuringList {
+    float: left;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.83);
+    width: 100%;
+    font-size: 18px;
+    border-bottom: 1px solid #fff;
+}
+
+div#openReoccuringList:hover {
+    float: left;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: orange;
+    width: 100%;
+    font-size: 18px;
+    border-bottom: 1px solid orange;
+}
+
+div#openLog {
+    float: left;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.83);
+    width: 100%;
+    font-size: 18px;
+    border-bottom: 1px solid #fff;
+}
+
+div#openLog:hover {
+    float: left;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: orange;
+    width: 100%;
+    font-size: 18px;
+    border-bottom: 1px solid orange;
+}
+
+
+
+div#closeReoccuringBuilder {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+}
+
+div#closeReoccuringBuilder {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 22px;
+}
+
+p#selectHeaderDP {
+    float: left;
+    width: 100%;
+    height: 22px;
+    direction: ltr;
+    margin-top: 30px;
+    background: #fff;
+}
+
+p#selectHeaderTR {
+    float: left;
+    width: 100%;
+    height: 25px;
+    direction: ltr;
+    margin-top: 30px;
+    background: #fff;
+    font-size: 18px;
+}
+
+select#DaysPackage {
+    float: left;
+    width: 50%;
+    margin-left: 25%;
+    height: 25px;
+}
+
+select#TimeToRun {
+    float: left;
+    width: 50%;
+    margin-left: 25%;
+    height: 25px;
+    margin-top: 50px;
+}
+
+button#btnSaveProcess {
+    position: absolute;
+    width: 30%;
+    bottom: 5px;
+    left: 35%;
+}
+
+div#Reoccuring {
+    position: fixed;
+    width: 70%;
+    max-height: 80%;
+    overflow-y: scroll;
+    top: 5%;
+    left: 15%;
+    padding: 1%;
+    padding-top: 0;
+    margin-top: 3%;
+    border: 1px solid #00d0ff;
+    background-color: rgba(0, 208, 255, 0.37);
+    border-radius: 5px;
+    z-index: 1100;
+    display: none;
+}
+
+table#ReoccuringList {
+    width: 100%;
+    color: rgba(228, 228, 228, 0.72);
+    font-size: 16px;
+}
+
+div#closeReoccuringList {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 22px;
+}
+
+div#ReoccuringListHeader {
+    float: left;
+    width: 100%;
+    direction: ltr;
+    margin-top: 50px;
+    background: #fff;
+    font-size: 22px;
+    height: 25px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    direction: rtl;
+    text-align: center;
+    width: 100%;
+    float: left;
+    margin-top: initial;
+    -webkit-margin-before: 0;
+}
+
+div#Log {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    background: #fff;
+    z-index: 1100;
+    padding: 1%;
+    display:none;
+}
+
+div#closeLog {
+    cursor: pointer;
+    color: #f3a914;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    float: left;
+    background: rgba(255, 255, 255, 0.84);
+    text-align: center;
+}
+
+table#LogList {
+    margin-left: 4%;
+    width: 90%;
+    color: rgb(136, 132, 132);
+    font-size: 14px;
+}
+
+div#LogListHeader {
+    background: #868585;
+    color: #fff;
+    float: left;
+    width: 90%;
+    direction: ltr;
+    margin-top: 0px;
+    font-size: 22px;
+    height: 25px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+
+body {
+    font: 14px "Assistant", sans-serif;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+td {
+    padding-right: 15px;
+}
+
+div#General {
+    float: left;
+    border-right: 1px solid #999;
+    padding-right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+div#Custom {
+    float: left;
+    border-right: 1px solid #999;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.selected {
+
+    font-weight: 600;
+    color: orange;    
+}
+
+fieldset#customConfigCardCom {
+    display: none;
+    width: 100%;
+    border: 0px;
+}
+
+.inputTitle {
+    float: left;
+    font-size: 15px;
+    height: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    width: 80%;
+}
+
+select#hidedonarid {
+    float: left;
+    width: 30%;
+    margin-right: 40%;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+select#hideCCcvc {
+    float: left;
+    width: 30%;
+    margin-right: 40%;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.customConfigCardComHeader {
+    float: left;
+    width: 95%;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: #000;
+}
+
+.standardHeader {
+    float: left;
+    width: 95%;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: #000;
+}
+
+div#TabCon {
+    float: left;
+    background: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 100%;
+}

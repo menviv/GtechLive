@@ -2,4 +2,110 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p פרמטרי אינטגרציה - סיילספורס וקארדקום עבור אנונימוס
+  div#login
+    input#userID(type='text', placeholder='username')
+    br
+    input#password(type='text', placeholder='password')
+    br
+    button#btnLogin Login
+    br
+    div#loginmsg Please check your credentials and try again..
+    p
+  div#Menu
+    div#openReoccuringBuilder Reoccuring Process
+    div#openReoccuringList Upcoming Donations
+    div#openLog Log
+  div#Log
+    div#closeLog X 
+    div#LogListHeader System Log 
+    table#LogList    
+  div#Reoccuring
+    div#closeReoccuringList X 
+    div#ReoccuringListHeader Upcoming Donations 
+    table#ReoccuringList
+  div#Shading
+  div#ReoccuringBuilder
+    div#closeReoccuringBuilder X
+    form(action="/csvuploader", method="post", enctype="multipart/form-data")
+       p#selectHeaderTR Reoccuring billing Time:
+       select#TimeToRun
+         option(value="tOne") 06:00AM
+         option(value="tTwo") 08:00PM
+         option(value="tThreen") 00:00AM 
+       br
+       button#btnSaveProcess Save
+       br
+       div#ProcessMsg   
+  div#manage
+    div#TabCon
+        div#General General
+        div#Custom Advanced
+    fieldset#standard
+        div.standardHeader General Configuration 
+        input#inputID(type='text', placeholder='id')
+        div Terminal:
+        input#inputTerminal(type='text', placeholder='Terminal')
+        div UserName:
+        input#inputUserName(type='text', placeholder='UserName')
+        br
+        div.inputTitle Operation:
+        input#inputOperation(type='text', placeholder='Operation')
+        div.inputTitle  DocTypeToCreate:
+        input#inputDocTypeToCreate(type='text', placeholder='DocTypeToCreate')
+        div.inputTitle  ShowCardOwnerPhone:
+        input#inputShowCardOwnerPhone(type='text', placeholder='ShowCardOwnerPhone')
+        div.inputTitle  ShowCardOwnerEmail:
+        input#inputShowCardOwnerEmail(type='text', placeholder='ShowCardOwnerEmail')
+        div.inputTitle  Billing Attempts:
+        input#inputAttempts(type='text', placeholder='Number of retries')        
+        br
+        div.inputTitle  Request LowProFileCod URL:
+        input#inputLowProFileURL(type='text', placeholder='LowProFileURL')
+        div.inputTitle  Request Asimon URL:
+        input#inputAsimonURL(type='text', placeholder='AsimonURL')
+        br
+        div.inputTitle  SFDC Login User:
+        input#inputSFDCLoginUser(type='text', placeholder='SFDCLoginUser')
+        div.inputTitle  SFDC Login Pass&Token:
+        input#inputSFDCLoginPass_Token(type='text', placeholder='SFDCLoginPass_Token')
+        div.inputTitle  SFDC Environment URL:
+        input#inputSFDCEnvironmentURL(type='text', placeholder='SFDCEnvironmentURL')
+        br
+        button#btnSaveSettings Save
+        br
+        div#status current configuration...
+    fieldset#customConfigCardCom
+        div.customConfigCardComHeader Custom Configuration - CardCom 
+        input#inputCustomID(type='text', placeholder='id')
+        div.inputTitle Hide donar ID on CardCom slika UI (HideCreditCardUserId=true):
+        select#hidedonarid
+          option(value="") None
+          option(value="true") True
+          option(value="false") False
+        div.inputTitle Hide CC cvc on CardCom slika UI (HideCVV=true):
+        select#hideCCcvc
+          option(value="") None
+          option(value="true") True
+          option(value="false") False          
+        div.inputTitle [1]Custom field to update CardCom upon request for Low Profile Code:
+        input#Customfield1Label(type='text', placeholder='FieldName')
+        input#Customfield1Value(type='text', placeholder='FieldName')
+        br
+        div.inputTitle [2]Custom field to update CardCom upon request for Low Profile Code:
+        input#Customfield2Label(type='text', placeholder='FieldName')
+        input#Customfield2Value(type='text', placeholder='FieldName')
+        br
+        div.inputTitle [3]Custom field to update CardCom upon request for Low Profile Code:
+        input#Customfield3Label(type='text', placeholder='FieldName')
+        input#Customfield3Value(type='text', placeholder='FieldName')
+        br
+        div.inputTitle [4]Custom field to update CardCom upon request for Low Profile Code:
+        input#Customfield4Label(type='text', placeholder='FieldName')
+        input#Customfield4Value(type='text', placeholder='FieldName')                
+        br
+        div.inputTitle [5]Custom field to update CardCom upon request for Low Profile Code:
+        input#Customfield5Label(type='text', placeholder='FieldName')
+        input#Customfield5Value(type='text', placeholder='FieldName')
+        br
+        button#btnSaveCustomConfiguration Save Custom Configuration                
